@@ -1,0 +1,51 @@
+#signin {
+  display: table;
+  #innerBox {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px;
+    text-align: center;
+    background-color: $lightBeige;
+    #loginTitle {
+      font-family: "-KITA-Regular";
+      font-size: 30px;
+      padding-bottom: 50px;
+    }
+    form {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 10px;
+      input {
+        display: block;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 7px;
+        background-color: $gray;
+        transition: transform 0.2s;
+        &:focus {
+          outline: none;
+          transform: scale(1.05);
+        }
+      }
+      #submit {
+        display: none;
+      }
+    }
+    #mkaccount, #find_id_pw {
+      text-align: right;
+      margin-bottom: 2px;
+      span {
+        color: blue;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

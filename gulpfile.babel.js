@@ -4,6 +4,8 @@ import del from "del";
 import autoprefixer from "gulp-autoprefixer";
 import miniCSS from "gulp-csso"
 import ts from "gulp-typescript";
+import concat from "gulp-concat";
+import stripImportExport from "gulp-strip-import-export";
 const tsProject = ts.createProject("tsconfig.json");
 const sass = require("gulp-sass")(require("node-sass"));
 
@@ -43,6 +45,8 @@ const Typescript = () =>
   gulp
     .src(routes.typescript.src)
     .pipe(tsProject())
+    .pipe(stripImportExport())
+    .pipe(concat("main.js"))
     .pipe(gulp.dest(routes.typescript.dest))
 
 const Clean = () => del(["build"]);

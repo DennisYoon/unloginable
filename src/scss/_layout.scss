@@ -1,14 +1,14 @@
 body {
   #vertical {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto 400px auto;
     height: 100vh;
     &::before {
       content: "";
     }
     #horizon {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: auto 700px auto;
       &::before {
         content: "";
       }
@@ -19,6 +19,18 @@ body {
     }
     &::after {
       content: "";
+    }
+  }
+  #copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
