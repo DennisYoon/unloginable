@@ -2,9 +2,10 @@
   #innerBox
     #loginTitle 로그인
     form(onsubmit="dologin()") 
-      input(type="id", placeholder="아이디 입력")
-      input(type="password", placeholder="비밀번호 입력")
+      input(type="id", id="id", placeholder="아이디 입력")
+      input(type="password", id="pw", placeholder="비밀번호 입력")
       input(type="submit", id="submit")
+    #inputProblem(class="hide") ID 혹은 PW가 잘못되었습니다.
     #mkaccount
       | 처음인가요?&nbsp;
       span 계정 만들기

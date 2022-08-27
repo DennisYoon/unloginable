@@ -1,3 +1,10 @@
 @import "_colors";
 @import "_init";
 @import "_layout";
+
+.show {
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+}

@@ -14,7 +14,6 @@
     form {
       display: inline-block;
       text-align: center;
-      margin-bottom: 10px;
       input {
         display: block;
         font-size: 20px;
@@ -32,6 +31,9 @@
           transform: scale(1.05);
         }
       }
+      #pw {
+        margin-bottom: 10px;
+      }
       #submit {
         display: none;
       }
@@ -46,6 +48,13 @@
           text-decoration: underline;
         }
       }
+    }
+    #inputProblem {
+      color: red;
+      text-align: right;
+      margin-bottom: 20px;
+      font-size: 12.5px;
+      transition: opacity 0.5s;
     }
   }
 }
