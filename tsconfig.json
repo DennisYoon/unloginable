@@ -3,8 +3,9 @@
   "exclude": ["node_modules"],
   "compilerOptions": {
     "noImplicitAny": true,
-    "target": "ES3",
+    "target": "ES6",
     "module": "ES2015",
     "strict": true,
-  }
+  },
+  "lib": ["DOM"]
 }

@@ -1,0 +1,8 @@
+#signInUpIdPw {
+  display: flex;
+  overflow: hidden;
+  background-color: $lightBeige;
+  @import "_find_id_pw";
+  @import "_signin";
+  @import "_signup";
+}

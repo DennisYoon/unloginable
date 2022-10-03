@@ -1,11 +1,12 @@
 #signin {
+  flex-basis: 100%;
+  flex-shrink: 0;
   display: table;
   #innerBox {
     display: table-cell;
     vertical-align: middle;
     padding: 50px;
     text-align: center;
-    background-color: $lightBeige;
     #loginTitle {
       font-family: "-KITA-Regular";
       font-size: 30px;
